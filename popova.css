@@ -1,0 +1,151 @@
+p { color: red; font-size: 16px; }
+
+
+
+.btn { 
+   width: 100px; 
+   height: 40px; 
+   background-color: green; 
+   color: white; 
+   font-weight: bold; 
+   border: none; 
+}
+
+.container { 
+   width: 300px; 
+   background-color: lightgray; 
+   margin: 20px; 
+} 
+.container p { 
+   padding: 10px; 
+}
+
+.img-example { 
+   border: 2px solid black; 
+} 
+[data-type="info"] { 
+   margin-left: 20px; 
+} 
+[data-type="warning"] { 
+   margin-left: 40px; 
+} 
+
+li:first-child { 
+   font-weight: bold; 
+} 
+li:last-child { 
+   font-style: italic; 
+} 
+.hover-text:hover { 
+   color: red; 
+}
+
+thead tr { 
+   background-color: lightblue; 
+} 
+tbody tr:nth-child(even) { 
+   background-color: lightgray; 
+}
+
+h1 { 
+   font-size: 24px; 
+   color: blue; 
+} 
+p { 
+    font-size: 16px; 
+    color: red; 
+}
+
+body {
+  margin: 50px !important;
+}
+
+@media screen and (max-height: 350px) {
+  p {
+    margin: 5px 0;
+  }
+  label {
+    margin-top: 0 !important;
+  }
+  body {
+    margin: 0px 20px !important;
+  }
+  h1 {
+    display: none;
+  }
+}
+
+/*
+in the head of your html file add this resources
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/anuraghazra/VerlyRangeSlider@v1.0.0/src/style.css" />
+<script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js@v1.2.0/dist/verly.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/anuraghazra/VerlyRangeSlider@v1.0.2/src/VerlyRange.js"></script>
+*/
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: #f35429;
+  }
+  
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: #f35429;
+  }
+  
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
