@@ -1,0 +1,7 @@
+<!-- подключение файла css с указанием типа устройства отображения -->
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="screen-only.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="print.css" rel="stylesheet" type="text/css" media="print">
+</head>
