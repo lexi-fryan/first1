@@ -1,5 +1,9 @@
 p { color: red; font-size: 16px; }
 a { color: green; font-size: 16px; }
 body {color: green;} 
- 
-
+img { 
+ transition: transform .3s ease-in-out 
+}
+a: hover #1.jpg , a:focus #1.jpg {
+ transform: scale(3);
+}
