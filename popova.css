@@ -4,6 +4,6 @@ body {color: green;}
 img { 
  transition: transform .3s ease-in-out 
 }
-a: hover #1.img , a:focus #1.img {
+a: hover #img1 , a:focus #img1 {
  transform: scale(3);
 }
