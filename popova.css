@@ -5,5 +5,5 @@ img {
  transition: transform .3s ease-in-out 
 }
 a: hover #img1 , a:focus #img1 {
- transform: scale(3);
+ transform: scale (1.5);
 }
