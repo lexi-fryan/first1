@@ -1,0 +1,11 @@
+body
+{
+margin:0;
+display:flex;
+
+}
+#canvas_plot
+{
+margin:auto;
+background:#dddddd;
+}
